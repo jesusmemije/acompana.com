@@ -1,0 +1,24 @@
+{
+  "name": "acompana.com",
+  "version": "1.0.0",
+  "description": "Web para Acompaña.inc, asesoría gubernamental",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "web",
+    "pice-software",
+    "site-web",
+    "portal",
+    "gubernamental"
+  ],
+  "author": "Jesús González Memije",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.0.1",
+    "jquery": "^3.6.0",
+    "jquery-animated-headlines": "^1.0.0",
+    "swiper": "^6.7.0"
+  }
+}

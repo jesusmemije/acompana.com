@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/Helvetica-Font/Helvetica.ttf') format('truetype');
+}
+
+body {
+    font-family: Helvetica;
+}
+
+#carouselHome .text-caption {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+    height: 100%;
+    width: 35%;
+    opacity: .8;
+    background-color: #000;
+}
+
+.bg-degradado {
+    /*background-image: url('img/nosotros/degradient.png');
+    background-size: cover;*/
+    background: linear-gradient(35deg, rgba(1, 1, 1, 1) 5%, rgba(80, 80, 80, 1) 50%, rgba(1, 1, 1, 1) 95%);
+}
+
+.bg-negro {
+    background: #030303 !important;
+}
+
+.img-copyright-size {
+    width: 20%;
+}
+
+.h-card-service {
+    height: 400px !important;
+}
+
+.imgAsistenteVirtual {
+    background: url(../img/servicios/asistente-virtual.jpg) no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.imgAsistenteVirtual:hover {
+    background: url(../img/servicios/asistente-virtual-reverso.jpg) no-repeat;
+    background-size: cover;
+}
+
+.imgAnalisisYAsesoria {
+    background: url(../img/servicios/analisis-y-asesoria.jpg) no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.imgAnalisisYAsesoria:hover {
+    background: url(../img/servicios/analisis-y-asesoria-reverso.jpg) no-repeat;
+    background-size: cover;
+}
+
+.imgAnalisisYAsesoria {
+    background: url(../img/servicios/analisis-y-asesoria.jpg) no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.imgAnalisisYAsesoria:hover {
+    background: url(../img/servicios/analisis-y-asesoria-reverso.jpg) no-repeat;
+    background-size: cover;
+}
+
+.imgCabildeo {
+    background: url(../img/servicios/cabildeo.jpg) no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.imgCabildeo:hover {
+    background: url(../img/servicios/cabildeo-reverso.jpg) no-repeat;
+    background-size: cover;
+}
+
+.imgVinculacion {
+    background: url(../img/servicios/vinculacion.jpg) no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.imgVinculacion:hover {
+    background: url(../img/servicios/vinculacion-reverso.jpg) no-repeat;
+    background-size: cover;
+}
+
+.imgNegociacion {
+    background: url(../img/servicios/negociacion.jpg) no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.imgNegociacion:hover {
+    background: url(../img/servicios/negociacion-reverso.jpg) no-repeat;
+    background-size: cover;
+}
+
+.imgCumplimientoRegulatorio {
+    background: url(../img/servicios/cumplimiento-regulatorio.jpg) no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.imgCumplimientoRegulatorio:hover {
+    background: url(../img/servicios/cumplimiento-regulatorio-reverso.jpg) no-repeat;
+    background-size: cover;
+}
+
+.bg-sector-privado {
+    background-image: url(../img/para-quien-es/sector-privado.jpg);
+    background-size: cover;
+    height: 400px;
+    padding-left: 0px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+.bg-sector-publico {
+    background-image: url(../img/para-quien-es/sector-publico.jpg);
+    background-size: cover;
+    height: 400px;
+    padding-left: 0px;
+    padding-right: 15px;
+    cursor: pointer;
+}
