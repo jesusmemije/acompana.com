@@ -174,7 +174,28 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-5"></div>
+        <div class="col-md-5 d-flex align-items-center" style="background-image: url(img/form/background.jpg); background-size: cover;">
+            <form id="contactForm" action="api/sendContact.php" method="post" class="mx-5 text-white w-100">
+                <div class="form-group mb-2">
+                    <h5 class="mb-3">Contáctanos tenemos una solución para ti.</h5>
+                    <label for="name">Nombre*</label>
+                    <input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp">
+                    <small id="nameHelp"></small>
+                </div>
+                <div class="form-group mb-2">
+                    <label for="email">Email*</label>
+                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+                    <small id="emailHelp"></small>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="phone">Teléfono*</label>
+                    <input type="text" class="form-control" id="phone" name="phone" aria-describedby="phoneHelp">
+                    <small id="phoneHelp"></small>
+                </div>
+                <div id="resultSubmit" class="text-center mb-3"></div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
     </div>
 
     <div class="row mx-0 bg-negro">
@@ -191,6 +212,42 @@
     <!-- Main js -->
     <script src="js/app.js"></script>
 
+    <script>
+        $("#contactForm").submit(function(event){
+            event.preventDefault();
+            var post_url = $(this).attr("action");
+            var request_method = $(this).attr("method");
+            var form_data = $(this).serialize();
+
+            $("#nameHelp").html('');
+            $("#emailHelp").html('');
+            $("#phoneHelp").html('');
+            $("#resultSubmit").html('');
+            
+            if ($("#name").val() == '') {
+                $("#nameHelp").html('Su nombre es requerido');
+                return false;
+            }
+            if ($("#email").val() == '') {
+                $("#emailHelp").html('Su correo es requerido');
+                return false;
+            }
+            if ($("#phone").val() == '') {
+                $("#phoneHelp").html('Su teléfono es requerido');
+                return false;
+            }
+
+            $("#resultSubmit").html('Enviando datos...');
+
+            $.ajax({
+                url : post_url,
+                type: request_method,
+                data : form_data
+            }).done(function(response){
+                $("#resultSubmit").html(response);
+            });
+        });
+    </script>
 </body>
 
 </html>
