@@ -133,3 +133,41 @@ body {
     padding-right: 15px;
     cursor: pointer;
 }
+
+.whatsapp {
+    position: fixed;
+    width: 64px;
+    height: 64px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    /*background-color: #A1195B;*/
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 40px;
+    z-index: 100;
+}
+
+.whatsapp:hover {
+    color: #fff;
+}
+
+.whatsappme_tooltip {
+    position: absolute;
+    top: 12px;
+    right: 66px;
+    max-width: calc(100vw - 105px);
+    height: 44px;
+    padding: 5px 18px;
+    border: none;
+    background-image: url(../img/whatsapp/background-right.png);
+    /*background-size: contain;*/
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: #075e54;
+    line-height: 31px;
+    white-space: nowrap;
+    opacity: 1;
+    font-size: 15px;
+}

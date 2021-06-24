@@ -55,3 +55,24 @@ $(function() {
     });
 
 })
+
+/* WhatsApp */
+const $whatsappme = $(".whatsappme");
+const $whatsappme_tooltip = $(".whatsappme_tooltip");
+
+$(window).on("load resize", function() {
+    if (this.matchMedia("(min-width: 768px)").matches) {
+        $whatsappme.hover(
+            function() {
+                const $this = $(this);
+                $this.find($whatsappme_tooltip).css("display", "block");
+            },
+            function() {
+                const $this = $(this);
+                $this.find($whatsappme_tooltip).css("display", "none");
+            }
+            );
+    } else {
+        $whatsappme.off("mouseenter mouseleave");
+    }
+});

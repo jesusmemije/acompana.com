@@ -9,9 +9,9 @@
     <!-- Libraries -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/jquery-animated-headlines/dist/css/jquery.animatedheadline.css">
-
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <!-- Custom styles -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css?v=1">
 
 </head>
 
@@ -204,13 +204,22 @@
         </div>
     </div>
 
+	<!--//BOTON WHATSAAP-->
+	<div class="whatsapp whatsappme">
+		<a href="https://api.whatsapp.com/send?phone=+523334753226&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20asistente%20inteligente." class="whatsapp" target="_blank" >
+		<i class="fab fa-whatsapp" data-tooltip="Contáctanos"></i></a>
+		<div class="whatsappme_tooltip" style="display: none;">
+            <div>Contáctanos para más inf.</div>
+		</div>
+	</div>
+
     <!-- Modules web -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="node_modules/jquery-animated-headlines/dist/js/jquery.animatedheadline.min.js"></script>
 
     <!-- Main js -->
-    <script src="js/app.js"></script>
+    <script src="js/app.js?v=1"></script>
 
 </body>
 
