@@ -13,9 +13,49 @@
     <!-- Custom styles -->
     <link rel="stylesheet" href="css/styles.css?v=1">
 
+    <style>
+        .nav-link {
+            padding: .2rem 1rem;
+        }
+
+        .bg-dark {
+            background-color: #0B0B0B !important;
+        }
+    </style>
+
 </head>
 
 <body>
+
+    <nav class="navbar navbarmenu navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-between" style="flex: 1; margin: auto !important;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#para-quien-es">¿Para quién es?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#por-que-nosotros">¿Por qué nosotros?</a>
+                    </li>
+                    <li>
+                        <a class="navbar-brand" href="#">
+                            <img src="img/logo.png" alt="" width="100" class="d-inline-block">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
 
     <div id="carouselHome" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -34,11 +74,11 @@
                     <p>Los asuntos públicos, afectan o benefian a las</p>
                     <div class="selector">
                         <h1 class="ah-headline" style="color: #A1185B;">
-                            <span class="ah-words-wrapper">
-                                <b class="is-visible">PERSONAS</b>
-                                <b>EMPRESAS</b>
-                                <b>INSTITUCIONES</b>
-                                <b>ASOCIACIONES</b>
+                            <span class="ah-words-wrapper w-100 text-center">
+                                <b class="is-visible w-100 text-center">PERSONAS</b>
+                                <b class="w-100 text-center">EMPRESAS</b>
+                                <b class="w-100 text-center">INSTITUCIONES</b>
+                                <b class="w-100 text-center">ASOCIACIONES</b>
                             </span>
                         </h1>
                     </div>
@@ -56,7 +96,16 @@
                     <img src="img/carousel-main/line.png" class="img-fluid" style="width: 10%;" alt="">
                     <h5 style="margin-bottom: 40%;">Caminamos contigo para que <br> tomes mejores decisiones</h5>
                     <p>Los asuntos públicos, afectan o benefian a las</p>
-                    <h1 style="color: #A1185B;"><strong>INSTITUCIONES</strong></h1>
+                    <div class="selector">
+                        <h1 class="ah-headline" style="color: #A1185B;">
+                            <span class="ah-words-wrapper w-100 text-center">
+                                <b class="is-visible w-100 text-center">PERSONAS</b>
+                                <b class="w-100 text-center">EMPRESAS</b>
+                                <b class="w-100 text-center">INSTITUCIONES</b>
+                                <b class="w-100 text-center">ASOCIACIONES</b>
+                            </span>
+                        </h1>
+                    </div>
                     <p>En Acompaña somos especialistas en el análisis y <br>
                         gestión de los asuntos relacionados en el ámbito <br>
                         gubernamental</p>
@@ -70,7 +119,16 @@
                     <img src="img/carousel-main/line.png" class="img-fluid" style="width: 10%;" alt="">
                     <h5 style="margin-bottom: 40%;">Caminamos contigo para que <br> tomes mejores decisiones</h5>
                     <p>Los asuntos públicos, afectan o benefian a las</p>
-                    <h1 style="color: #A1185B;"><strong>INSTITUCIONES</strong></h1>
+                    <div class="selector">
+                        <h1 class="ah-headline" style="color: #A1185B;">
+                            <span class="ah-words-wrapper w-100 text-center">
+                                <b class="is-visible w-100 text-center">PERSONAS</b>
+                                <b class="w-100 text-center">EMPRESAS</b>
+                                <b class="w-100 text-center">INSTITUCIONES</b>
+                                <b class="w-100 text-center">ASOCIACIONES</b>
+                            </span>
+                        </h1>
+                    </div>
                     <p>En Acompaña somos especialistas en el análisis y <br>
                         gestión de los asuntos relacionados en el ámbito <br>
                         gubernamental</p>
@@ -88,31 +146,24 @@
     </div>
 
     <div class="container">
-        <div class="row">
+        <div class="row" id="nosotros">
             <div class="col-md-6 my-5">
                 <img src="img/nosotros/title.png" class="img-fluid" alt="" style="width: 45%;">
             </div>
             <div class="col-md-6 py-5 px-5 text-center text-white bg-degradado">
-                <p>Somos un despacho especializado en la prestación de servicios
-                    profesionales de análisis y gestión de asuntos relacionados con el
-                    ámbito de gobierno.</p>
-                <p>Estamos listos para acompañarte en los procesos para prevenir,
-                    promover y proteger tus intereses e inquietudes, sobre la toma de
-                    decisiones que realiza el Gobierno e influyen en tu entorno.</p>
-                <p>También contribuimos con el análisis del ámbito público, para
-                    prevenir crisis y anticipar escenarios en el entorno social, político y
-                    de gobierno. <br>
-                    Además, te ayudamos a construir relaciones estratégicas para que
-                    alcances tus metas.
-                </p>
+                <p>Somos un despacho especializado en la prestación de servicios profesionales de
+                    análisis y gestión de asuntos relacionados con el ámbito de gobierno.</p>
+                <p>Estamos listos para acompañarte en los procesos para prevenir, promover y proteger
+                    tus intereses e inquietudes, sobre la toma de decisiones que realiza el Gobierno e influyen en tu entorno.</p>
+                <p>También contribuimos con el análisis del ámbito público, para prevenir crisis y
+                    anticipar escenarios en el entorno social, político y de gobierno. <br>
+                    Además, te ayudamos a construir relaciones estratégicas para que alcances tus metas.</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6 my-4">
-                <img src="img/servicios/title.jpg" class="img-fluid" alt="" style="width: 45%;">
+        <div class="row" id="servicios">
+            <div class="col-md-12 my-4">
+                <img src="img/servicios/title.jpg" class="img-fluid" alt="" style="width: 20%;">
             </div>
-        </div>
-        <div class="row">
             <div class="col-md-4 p-4 h-card-service" style="border-bottom: #464646 1px solid;">
                 <div class="imgAsistenteVirtual w-100 h-100"></div>
             </div>
@@ -132,10 +183,19 @@
                 <div class="imgCumplimientoRegulatorio w-100 h-100"></div>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="para-quien-es">
             <div class="col-md-6 mt-4">
                 <img src="img/para-quien-es/title.jpg" class="img-fluid" alt="" style="width: 60%;"><br><br><br>
-                <img src="img/para-quien-es/texto.jpg" class="img-fluid" alt="" style="width: 50%;">
+                <div class="selector">
+                    <h1 class="ah-headline" style="color: #A1185B;">
+                        <span class="ah-words-wrapper">
+                            <b class="is-visible">PERSONAS</b>
+                            <b>EMPRESAS</b>
+                            <b>INSTITUCIONES</b>
+                            <b>ASOCIACIONES</b>
+                        </span>
+                    </h1>
+                </div>
             </div>
             <div id="hover-sector-privado" class="col-md-3 mt-4 d-flex align-items-center bg-sector-privado">
                 <div id="img-sector-privado" class="w-100 text-white text-center" style="background: linear-gradient(35deg, rgba(1,1,1,1) 5%, rgba(80,80,80,1) 50%, rgba(1,1,1,1) 95%); display: none;">
@@ -154,23 +214,16 @@
         </div>
     </div>
 
-    <div class="row mx-0">
+    <div class="row mx-0" id="por-que-nosotros">
         <div class="col-md-7 d-flex align-items-center" style="background-image: url(img/por-que-nosotros/background.jpg); background-size: cover; height: 400px;">
             <div class="row">
                 <div class="col-md-6 text-center">
                     <img src="img/por-que-nosotros/title.png" class="img-fluid" style="width: 80%;" alt="">
-                    <p class="text-white">En Acompaña tenemos un amplio
-                        conocimiento de la estructura legal,
-                        organizacional y funcional de las
-                        instituciones públicas involucradas en
-                        la toma de decisiones. Además,
-                        estamos al tanto de los temas que se
-                        proponen y discuten, por lo que
-                        podemos brindarle la asesoría
-                        necesaria para que tus intereses e
-                        inquietudes tengan una estrategia
-                        alineada con las normas y los
-                        procesos</p>
+                    <p class="text-white">En Acompaña tenemos un amplio conocimiento de la estructura
+                        legal, organizacional y funcional de las instituciones públicas involucradas
+                        en la toma de decisiones. Además, estamos al tanto de los temas que se proponen
+                        y discuten, por lo que podemos brindarle la asesoría necesaria para que tus
+                        intereses e inquietudes tengan una estrategia alineada con las normas y los procesos</p>
                 </div>
             </div>
         </div>
@@ -204,14 +257,14 @@
         </div>
     </div>
 
-	<!-- WhatsApp Floating-->
-	<div class="whatsapp whatsappme">
-		<a href="https://api.whatsapp.com/send?phone=+523334753226&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20." class="whatsapp" target="_blank" >
-		<i class="fab fa-whatsapp" data-tooltip="Contáctanos"></i></a>
-		<div class="whatsappme_tooltip" style="display: none;">
+    <!-- WhatsApp Floating-->
+    <div class="whatsapp whatsappme">
+        <a href="https://api.whatsapp.com/send?phone=+523334753226&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20." class="whatsapp" target="_blank">
+            <i class="fab fa-whatsapp" data-tooltip="Contáctanos"></i></a>
+        <div class="whatsappme_tooltip" style="display: none;">
             <div>Contáctanos para más inf.</div>
-		</div>
-	</div>
+        </div>
+    </div>
 
     <!-- Modules web -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
@@ -220,6 +273,15 @@
 
     <!-- Main js -->
     <script src="js/app.js?v=1"></script>
+
+    <script>
+        $('.navbarmenu').removeClass("fixed-top");
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                $('.navbarmenu').toggleClass("fixed-top", ($(window).scrollTop() > 45));
+            });
+        });
+    </script>
 
 </body>
 
