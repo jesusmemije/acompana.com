@@ -51,6 +51,7 @@ $(function() {
             data : form_data
         }).done(function(response){
             $("#resultSubmit").html(response);
+            $("#contactForm")[0].reset();
         });
     });
 

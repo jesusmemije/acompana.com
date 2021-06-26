@@ -204,9 +204,9 @@
         </div>
     </div>
 
-	<!--//BOTON WHATSAAP-->
+	<!-- WhatsApp Floating-->
 	<div class="whatsapp whatsappme">
-		<a href="https://api.whatsapp.com/send?phone=+523334753226&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20asistente%20inteligente." class="whatsapp" target="_blank" >
+		<a href="https://api.whatsapp.com/send?phone=+523334753226&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20." class="whatsapp" target="_blank" >
 		<i class="fab fa-whatsapp" data-tooltip="Contáctanos"></i></a>
 		<div class="whatsappme_tooltip" style="display: none;">
             <div>Contáctanos para más inf.</div>
