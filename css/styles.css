@@ -46,7 +46,7 @@ body {
 }
 
 .imgAsistenteVirtual:hover {
-    background: url(../img/servicios/asistente-virtual-reverso.jpg) no-repeat;
+    background: url(../img/servicios/background.jpg) no-repeat;
     background-size: cover;
 }
 
@@ -57,7 +57,7 @@ body {
 }
 
 .imgAnalisisYAsesoria:hover {
-    background: url(../img/servicios/analisis-y-asesoria-reverso.jpg) no-repeat;
+    background: url(../img/servicios/background.jpg) no-repeat;
     background-size: cover;
 }
 
@@ -68,7 +68,7 @@ body {
 }
 
 .imgAnalisisYAsesoria:hover {
-    background: url(../img/servicios/analisis-y-asesoria-reverso.jpg) no-repeat;
+    background: url(../img/servicios/background.jpg) no-repeat;
     background-size: cover;
 }
 
@@ -79,7 +79,7 @@ body {
 }
 
 .imgCabildeo:hover {
-    background: url(../img/servicios/cabildeo-reverso.jpg) no-repeat;
+    background: url(../img/servicios/background.jpg) no-repeat;
     background-size: cover;
 }
 
@@ -90,7 +90,7 @@ body {
 }
 
 .imgVinculacion:hover {
-    background: url(../img/servicios/vinculacion-reverso.jpg) no-repeat;
+    background: url(../img/servicios/background.jpg) no-repeat;
     background-size: cover;
 }
 
@@ -101,7 +101,7 @@ body {
 }
 
 .imgNegociacion:hover {
-    background: url(../img/servicios/negociacion-reverso.jpg) no-repeat;
+    background: url(../img/servicios/background.jpg) no-repeat;
     background-size: cover;
 }
 
@@ -112,25 +112,19 @@ body {
 }
 
 .imgCumplimientoRegulatorio:hover {
-    background: url(../img/servicios/cumplimiento-regulatorio-reverso.jpg) no-repeat;
+    background: url(../img/servicios/background.jpg) no-repeat;
     background-size: cover;
 }
 
 .bg-sector-privado {
     background-image: url(../img/para-quien-es/sector-privado.jpg);
     background-size: cover;
-    height: 400px;
-    padding-left: 0px;
-    padding-right: 15px;
     cursor: pointer;
 }
 
 .bg-sector-publico {
     background-image: url(../img/para-quien-es/sector-publico.jpg);
     background-size: cover;
-    height: 400px;
-    padding-left: 0px;
-    padding-right: 15px;
     cursor: pointer;
 }
 
@@ -170,4 +164,59 @@ body {
     white-space: nowrap;
     opacity: 1;
     font-size: 15px;
+}
+
+.nav-link {
+    padding: .2rem 1rem;
+}
+
+.bg-dark {
+    background-color: #0B0B0B !important;
+}
+
+.gradient-title-service {
+    background: linear-gradient(45deg, rgba(80, 80, 80, 1) 5%, rgba(1, 1, 1, 1) 50%, rgba(80, 80, 80, 1) 95%);
+}
+
+.h-card-sectores {
+    height: 500px !important;
+}
+
+.btn-enviar {
+    background: linear-gradient(168deg, rgba(161, 64, 104, 1) 35%, rgba(139, 19, 78, 1) 87%);
+    border: none;
+    color: white;
+    padding: 6px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 26px;
+    box-shadow: 2px 4px 8px #333233;
+}
+
+.btn-services {
+    background: linear-gradient(90deg, rgba(171, 93, 107, 1) 0%, rgba(143, 28, 85, 1) 50%, rgba(161, 25, 91, 1) 100%);
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 18px 18px 0 0;
+    position: absolute;
+    bottom: 0px;
+    left: 15%;
+    right: 15%;
+}
+
+.btn-services:hover {
+    color: #fff;
+}
+
+.line-divider {
+    border-bottom: 3px solid #A1195B;
 }

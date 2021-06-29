@@ -11,49 +11,50 @@
     <link rel="stylesheet" href="node_modules/jquery-animated-headlines/dist/css/jquery.animatedheadline.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <!-- Custom styles -->
-    <link rel="stylesheet" href="css/styles.css?v=1">
+    <link rel="stylesheet" href="css/styles.css?v=1.2.3">
 
     <style>
-        .nav-link {
-            padding: .2rem 1rem;
-        }
-
-        .bg-dark {
-            background-color: #0B0B0B !important;
+        .text-headline {
+            width: 100% !important;
+            text-align: center !important;
+            font-family: 'Helvetica' !important;
+            font-weight: bold !important;
+            font-style: normal !important;
         }
     </style>
-
 </head>
 
 <body>
 
     <nav class="navbar navbarmenu navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
+        <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-between" style="flex: 1; margin: auto !important;">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#nosotros">Nosotros</a>
+                        <a class="nav-link active" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#servicios">Servicios</a>
+                        <a class="nav-link text-white" href="#nosotros">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#para-quien-es">¿Para quién es?</a>
+                        <a class="nav-link text-white" href="#servicios">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#por-que-nosotros">¿Por qué nosotros?</a>
+                        <a class="nav-link text-white" href="#para-quien-es">¿Para quién es?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#por-que-nosotros">¿Por qué nosotros?</a>
                     </li>
                     <li>
-                        <a class="navbar-brand" href="#">
-                            <img src="img/logo.png" alt="" width="100" class="d-inline-block">
+                        <a class="navbar-brand" href="/">
+                            <img src="img/logo-navbar.png" alt="" width="100" class="d-inline-block">
                         </a>
                     </li>
                 </ul>
             </div>
-
         </div>
     </nav>
 
@@ -75,14 +76,13 @@
                     <div class="selector">
                         <h1 class="ah-headline" style="color: #A1185B;">
                             <span class="ah-words-wrapper w-100 text-center">
-                                <b class="is-visible w-100 text-center">PERSONAS</b>
-                                <b class="w-100 text-center">EMPRESAS</b>
-                                <b class="w-100 text-center">INSTITUCIONES</b>
-                                <b class="w-100 text-center">ASOCIACIONES</b>
+                                <b class="is-visible text-headline"><strong>PERSONAS</strong></b>
+                                <b class="text-headline">EMPRESAS</b>
+                                <b class="text-headline">INSTITUCIONES</b>
+                                <b class="text-headline">ASOCIACIONES</b>
                             </span>
                         </h1>
                     </div>
-
                     <p>En Acompaña somos especialistas en el análisis y <br>
                         gestión de los asuntos relacionados en el ámbito <br>
                         gubernamental</p>
@@ -99,10 +99,10 @@
                     <div class="selector">
                         <h1 class="ah-headline" style="color: #A1185B;">
                             <span class="ah-words-wrapper w-100 text-center">
-                                <b class="is-visible w-100 text-center">PERSONAS</b>
-                                <b class="w-100 text-center">EMPRESAS</b>
-                                <b class="w-100 text-center">INSTITUCIONES</b>
-                                <b class="w-100 text-center">ASOCIACIONES</b>
+                                <b class="is-visible text-headline">PERSONAS</b>
+                                <b class="text-headline">EMPRESAS</b>
+                                <b class="text-headline">INSTITUCIONES</b>
+                                <b class="text-headline">ASOCIACIONES</b>
                             </span>
                         </h1>
                     </div>
@@ -122,10 +122,10 @@
                     <div class="selector">
                         <h1 class="ah-headline" style="color: #A1185B;">
                             <span class="ah-words-wrapper w-100 text-center">
-                                <b class="is-visible w-100 text-center">PERSONAS</b>
-                                <b class="w-100 text-center">EMPRESAS</b>
-                                <b class="w-100 text-center">INSTITUCIONES</b>
-                                <b class="w-100 text-center">ASOCIACIONES</b>
+                                <b class="is-visible text-headline">PERSONAS</b>
+                                <b class="text-headline">EMPRESAS</b>
+                                <b class="text-headline">INSTITUCIONES</b>
+                                <b class="text-headline">ASOCIACIONES</b>
                             </span>
                         </h1>
                     </div>
@@ -146,46 +146,111 @@
     </div>
 
     <div class="container">
-        <div class="row" id="nosotros">
-            <div class="col-md-6 my-5">
-                <img src="img/nosotros/title.png" class="img-fluid" alt="" style="width: 45%;">
+        <div class="row line-divider" id="nosotros">
+            <div class="col-md-4 my-5">
+                <img src="img/nosotros/title.png" class="img-fluid" alt="" style="width: 65%;">
             </div>
-            <div class="col-md-6 py-5 px-5 text-center text-white bg-degradado">
+            <div class="col-md-8 my-5 px-4 py-3 text-center text-white bg-degradado" style="border-radius: 10px; box-shadow: 2px 10px 15px #000;">
                 <p>Somos un despacho especializado en la prestación de servicios profesionales de
                     análisis y gestión de asuntos relacionados con el ámbito de gobierno.</p>
                 <p>Estamos listos para acompañarte en los procesos para prevenir, promover y proteger
-                    tus intereses e inquietudes, sobre la toma de decisiones que realiza el Gobierno e influyen en tu entorno.</p>
+                    tus intereses e inquietudes, sobre la toma de decisiones que realiza el Gobierno e influyen en tu
+                    entorno.</p>
                 <p>También contribuimos con el análisis del ámbito público, para prevenir crisis y
                     anticipar escenarios en el entorno social, político y de gobierno. <br>
                     Además, te ayudamos a construir relaciones estratégicas para que alcances tus metas.</p>
             </div>
         </div>
-        <div class="row" id="servicios">
+        <div class="row line-divider" id="servicios">
             <div class="col-md-12 my-4">
                 <img src="img/servicios/title.jpg" class="img-fluid" alt="" style="width: 20%;">
             </div>
-            <div class="col-md-4 p-4 h-card-service" style="border-bottom: #464646 1px solid;">
-                <div class="imgAsistenteVirtual w-100 h-100"></div>
-            </div>
-            <div class="col-md-4 p-4 h-card-service" style="border-right: #464646 1px solid; border-left: #464646 1px solid; border-bottom: #464646 1px solid;">
-                <div class="imgAnalisisYAsesoria w-100 h-100"></div>
-            </div>
-            <div class="col-md-4 p-4 h-card-service" style="border-bottom: #464646 1px solid;">
-                <div class="imgCabildeo w-100 h-100"></div>
+            <div class="col-md-4 p-4 h-card-service">
+                <div class="imgAsistenteVirtual w-100 h-100" style="position: relative;">
+                    <br><br>
+                    <div id="bgAsistenteVirtual" class="text-white text-center text-uppercase py-2 gradient-title-service">
+                        Asistente virtual de noticias
+                    </div>
+                    <div id="contentAsistenteVirtual" class="text-white text-center p-2" style="display: none;">
+                        Con tan solo 10 minutos de lectura al día, entérate y comprende lo que sucede en México
+                        y el mundo de forma simple, rápida, objetiva, confiable y automatizada utilizando esta
+                        herramienta digital.
+                        <a class="btn-services py-2" target="_BLANK" href="https://api.whatsapp.com/send?phone=+523334753226&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20.">
+                            Asesoría online
+                        </a>
+                    </div>
+                </div>
             </div>
             <div class="col-md-4 p-4 h-card-service">
-                <div class="imgVinculacion w-100 h-100"></div>
-            </div>
-            <div class="col-md-4 p-4 h-card-service" style="border-right: #464646 1px solid; border-left: #464646 1px solid;">
-                <div class="imgNegociacion w-100 h-100"></div>
+                <div class="imgAnalisisYAsesoria w-100 h-100" style="position: relative;">
+                    <br><br>
+                    <div id="bgAnalisisYAsesoria" class="text-white text-center text-uppercase py-2 gradient-title-service">
+                        Análisis y asesoría
+                    </div>
+                    <div id="contentAnalisisYAsesoria" class="text-white text-center p-2" style="display: none;">
+                        Investigamos y hacemos un análisis especializado de aquella información que te ayudará
+                        para la toma de tus decisiones y el manejo eficiente de tus asuntos, mediante un proceso
+                        de revisión de las acciones de gobierno que te permita comprender sus implicaciones
+                        técnicas, jurídicas, políticas o sociales. Además, te asesoramos sobre las posibles rutas
+                        de acción que puedes tomar.
+                        <a class="btn-services py-2" target="_BLANK" href="https://api.whatsapp.com/send?phone=+523334753226&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20.">
+                            Suscríbete
+                        </a>
+                    </div>
+                </div>
             </div>
             <div class="col-md-4 p-4 h-card-service">
-                <div class="imgCumplimientoRegulatorio w-100 h-100"></div>
+                <div class="imgCabildeo w-100 h-100">
+                    <br><br>
+                    <div id="bgCabildeo" class="text-white text-center text-uppercase py-2 gradient-title-service">
+                        Cabildeo
+                    </div>
+                    <div id="contentCabildeo" class="text-white text-center p-2" style="display: none;">
+                        Con este mecanismo ayudamos a las personas, empresas, organizaciones e instituciones, a interactuar
+                        en la toma de decisiones públicas, a través de procesos estratégicos y legales.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-4 h-card-service">
+                <div class="imgVinculacion w-100 h-100">
+                    <br><br>
+                    <div id="bgVinculacion" class="text-white text-center text-uppercase py-2 gradient-title-service">
+                        Vinculación
+                    </div>
+                    <div id="contentVinculacion" class="text-white text-center p-2" style="display: none;">
+                        Investigamos y contribuimos a determinar los procesos de relaciones públicas estratégicas
+                        y efectivas que te permitirán acceder a los tomadores de decisiones.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-4 h-card-service">
+                <div class="imgNegociacion w-100 h-100">
+                    <br><br>
+                    <div id="bgNegociacion" class="text-white text-center text-uppercase py-2 gradient-title-service">
+                        Negociación
+                    </div>
+                    <div id="contentNegociacion" class="text-white text-center p-2" style="display: none;">
+                        Construimos junto contigo una estrategia de comunicación e interacción para que puedas alcanzar
+                        acuerdos provechosos, mediante el intercambio de información, concesiones y compromisos.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-4 h-card-service">
+                <div class="imgCumplimientoRegulatorio w-100 h-100">
+                    <br><br>
+                    <div id="bgCumplimientoRegulatorio" class="text-white text-center text-uppercase py-2 gradient-title-service">
+                        Cumplimiento regulatorio
+                    </div>
+                    <div id="contentCumplimientoRegulatorio" class="text-white text-center p-2" style="display: none;">
+                        Caminamos a tu lado para la investigación, preparación y ejecución de requisitos, políticas y
+                        normas, que te permitan dar cumplimiento a un trámite de gobierno.
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row" id="para-quien-es">
-            <div class="col-md-6 mt-4">
-                <img src="img/para-quien-es/title.jpg" class="img-fluid" alt="" style="width: 60%;"><br><br><br>
+        <div class="row line-divider" id="para-quien-es">
+            <div class="col-md-4 mt-4">
+                <img src="img/para-quien-es/title.jpg" class="img-fluid" alt="" style="width: 80%;"><br><br><br>
                 <div class="selector">
                     <h1 class="ah-headline" style="color: #A1185B;">
                         <span class="ah-words-wrapper">
@@ -197,27 +262,35 @@
                     </h1>
                 </div>
             </div>
-            <div id="hover-sector-privado" class="col-md-3 mt-4 d-flex align-items-center bg-sector-privado">
-                <div id="img-sector-privado" class="w-100 text-white text-center" style="background: linear-gradient(35deg, rgba(1,1,1,1) 5%, rgba(80,80,80,1) 50%, rgba(1,1,1,1) 95%); display: none;">
-                    <p class="mx-2 my-4">Para empresarios, directores, gerentes, dueños de empresas e inversionistas interesados en
-                        promover y defender asuntos relacionados con la toma de decisiones del ámbito de gobierno,
-                        así como en la prevención de crisis y la anticipación de escenarios sociopolíticos. </p>
+            <div id="hover-sector-privado" class="col-md-4 p-4 h-card-sectores">
+                <div class="bg-sector-privado w-100 h-100 d-flex align-items-center">
+                    <div id="img-sector-privado" class="w-100 text-white text-center" style="background: linear-gradient(35deg, rgba(1,1,1,1) 5%, rgba(80,80,80,1) 50%, rgba(1,1,1,1) 95%); opacity: 0.8; display: none;">
+                        <p class="mx-2 my-4">
+                            Para empresarios, directores, gerentes, dueños de empresas e inversionistas interesados en
+                            promover y defender asuntos relacionados con la toma de decisiones del ámbito de gobierno,
+                            así como en la prevención de crisis y la anticipación de escenarios sociopolíticos.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div id="hover-sector-publico" class="col-md-3 mt-4 d-flex align-items-center bg-sector-publico">
-                <div id="img-sector-publico" class="w-100 text-white text-center" style="background: linear-gradient(35deg, rgba(1,1,1,1) 5%, rgba(80,80,80,1) 50%, rgba(1,1,1,1) 95%); display: none;">
-                    <p class="mx-2 my-4">Para funcionarios, políticos y líderes interesados en promover y defender asuntos relacionados
-                        con la toma de decisiones del ámbito de gobierno, así como en la prevención de crisis y la
-                        anticipación de escenarios sociopolíticos. </p>
+            <div id="hover-sector-publico" class="col-md-4 p-4 h-card-sectores">
+                <div class="bg-sector-publico w-100 h-100 d-flex align-items-center">
+                    <div id="img-sector-publico" class="w-100 text-white text-center" style="background: linear-gradient(35deg, rgba(1,1,1,1) 5%, rgba(80,80,80,1) 50%, rgba(1,1,1,1) 95%); opacity: 0.8; display: none;">
+                        <p class="mx-2 my-4">
+                            Para funcionarios, políticos y líderes interesados en promover y defender asuntos relacionados
+                            con la toma de decisiones del ámbito de gobierno, así como en la prevención de crisis y la
+                            anticipación de escenarios sociopolíticos.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="row mx-0" id="por-que-nosotros">
-        <div class="col-md-7 d-flex align-items-center" style="background-image: url(img/por-que-nosotros/background.jpg); background-size: cover; height: 400px;">
+        <div class="col-md-7 d-flex align-items-center" style="background-image: url(img/por-que-nosotros/background.jpg); background-size: cover;">
             <div class="row">
-                <div class="col-md-6 text-center">
+                <div class="col-md-6 px-5">
                     <img src="img/por-que-nosotros/title.png" class="img-fluid" style="width: 80%;" alt="">
                     <p class="text-white">En Acompaña tenemos un amplio conocimiento de la estructura
                         legal, organizacional y funcional de las instituciones públicas involucradas
@@ -227,27 +300,29 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-5 d-flex align-items-center" style="background-image: url(img/form/background.jpg); background-size: cover;">
-            <form id="contactForm" action="api/sendContact.php" method="post" class="mx-5 text-white w-100">
-                <div class="form-group mb-2">
-                    <h5 class="mb-3">Contáctanos tenemos una solución para ti.</h5>
-                    <label for="name">Nombre*</label>
-                    <input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp">
-                    <small id="nameHelp"></small>
-                </div>
-                <div class="form-group mb-2">
-                    <label for="email">Email*</label>
-                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
-                    <small id="emailHelp"></small>
-                </div>
-                <div class="form-group mb-3">
-                    <label for="phone">Teléfono*</label>
-                    <input type="text" class="form-control" id="phone" name="phone" aria-describedby="phoneHelp">
-                    <small id="phoneHelp"></small>
-                </div>
-                <div id="resultSubmit" class="text-center mb-3"></div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
+        <div class="col-md-5 p-5 d-flex align-items-center" style="background-image: url(img/form/background.jpg); background-size: cover;">
+            <div class="p-4 text-white w-100" style="background: linear-gradient(160deg, rgba(102,101,101,1) 0%, rgba(53,53,52,1) 35%, rgba(102,101,101,1) 70%); border-radius: 10px; box-shadow: 2px 10px 15px #777;">
+                <form id="contactForm" action="api/sendContact.php" method="post">
+                    <div class="form-group mb-2">
+                        <h5 class="mb-3 text-center">Contáctanos tenemos una solución para ti.</h5>
+                        <label for="name">Nombre*</label>
+                        <input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp">
+                        <small id="nameHelp" class="text-danger fw-bold"></small>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="email">Email*</label>
+                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+                        <small id="emailHelp" class="text-danger fw-bold"></small>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="phone">Teléfono*</label>
+                        <input type="text" class="form-control" id="phone" name="phone" aria-describedby="phoneHelp">
+                        <small id="phoneHelp" class="text-danger fw-bold"></small>
+                    </div>
+                    <div id="resultSubmit" class="text-center mb-3"></div>
+                    <button type="submit" class="btn-enviar">Enviar</button>
+                </form>
+            </div>
         </div>
     </div>
 
@@ -272,16 +347,7 @@
     <script src="node_modules/jquery-animated-headlines/dist/js/jquery.animatedheadline.min.js"></script>
 
     <!-- Main js -->
-    <script src="js/app.js?v=1"></script>
-
-    <script>
-        $('.navbarmenu').removeClass("fixed-top");
-        $(document).ready(function() {
-            $(window).scroll(function() {
-                $('.navbarmenu').toggleClass("fixed-top", ($(window).scrollTop() > 45));
-            });
-        });
-    </script>
+    <script src="js/app.js?v=1.1"></script>
 
 </body>
 
