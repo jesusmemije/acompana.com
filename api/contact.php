@@ -38,12 +38,11 @@ class Contact
 
     public function Mail()
     {
-
         $mailheader = "<div style=\"font-size:15px; color:#000; font-family:arial, sans-serif; line-height:1.5; margin:0\">
         <div style=\"width:100%; background-color:#007bff; text-align:center; position:relative; z-index:1\">
         </div>
 
-        <div style=\"background-image:url(http://pice-software.com/pruebas/pontohorizonte/assets/img/fmail.jpg); background-repeat:repeat-x; background-position:center; padding:20px\">
+        <div style=\"background-image:url(http://acompana.com.mx/img/mail/header.jpg); background-repeat:repeat-x; background-position:center; padding:20px\">
         <div style=\"background-color:#fff; width:550px; max-width:calc(90% - 50px); margin:auto; padding:15px 25px;min-height: 446px;\">";
 
         $mailfooter = "<br><br></div>
@@ -75,8 +74,8 @@ class Contact
 
         $email_txt .= $mailfooter;
 
-        $email_to = "memije.dev@gmail.com";
-        $email_subject = "Acompaña - Contacto";
+        $email_to = "informacion@acompana.com.mx";
+        $email_subject = "Nuevo contacto - Acompaña (asuntos públicos)";
 
         $headers = "From: " . $this->email . "\r\n";
         $headers .= "Cc: memije.dev@gmail.com";

@@ -113,7 +113,33 @@ $(function () {
         });
     });
 
+    //Obtener el valor init
+    bgCarouselResize()
+
+    //Obtener el valor cuando se redimenciona
+    $( window ).resize(function() {
+        bgCarouselResize()
+    });
+
+    function bgCarouselResize() {
+        if ( $(window).width() < 576) {
+            $("#carousel-background-1").attr("src","img/carousel-main/movil/background-1.jpg");
+            $("#carousel-background-2").attr("src","img/carousel-main/movil/background-2.jpg");
+            $("#carousel-background-3").attr("src","img/carousel-main/movil/background-3.jpg");
+        } else {
+            $("#carousel-background-1").attr("src","img/carousel-main/background-1.jpg");
+            $("#carousel-background-2").attr("src","img/carousel-main/background-2.jpg");
+            $("#carousel-background-3").attr("src","img/carousel-main/background-3.jpg");
+        }
+    }
 })
+
+/* Preloader */
+$(window).on("load", function(){
+    $('.preloader-container').fadeOut('slow', function(){
+        $( this ).css( "display", "none" );
+   });
+});
 
 /* WhatsApp */
 const $whatsappme = $(".whatsappme");

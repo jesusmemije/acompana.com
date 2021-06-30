@@ -10,21 +10,21 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/jquery-animated-headlines/dist/css/jquery.animatedheadline.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="css/load-awesome.min.css">
     <!-- Custom styles -->
-    <link rel="stylesheet" href="css/styles.css?v=1.2.3">
+    <link rel="stylesheet" href="css/styles.css?v=2">
 
-    <style>
-        .text-headline {
-            width: 100% !important;
-            text-align: center !important;
-            font-family: 'Helvetica' !important;
-            font-weight: bold !important;
-            font-style: normal !important;
-        }
-    </style>
 </head>
 
 <body>
+    <!-- preloader -->
+    <div class="preloader-container">
+        <div class="la-ball-triangle-path la-2x">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
 
     <nav class="navbar navbarmenu navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
@@ -32,7 +32,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-between" style="flex: 1; margin: auto !important;">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-between text-center" style="flex: 1; margin: auto !important;">
                     <li class="nav-item">
                         <a class="nav-link active" href="/">Home</a>
                     </li>
@@ -66,15 +66,15 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="img/carousel-main/background-1.jpg" class="d-block w-100" alt="...">
-                <div class="text-caption d-none d-md-block">
+                <img id="carousel-background-1" src="img/carousel-main/background-1.jpg" class="w-100" alt="...">
+                <div class="text-caption">
                     <br>
                     <img src="img/logo.png" class="img-fluid" style="width: 60%;" alt=""><br>
                     <img src="img/carousel-main/line.png" class="img-fluid" style="width: 10%;" alt="">
                     <h5 style="margin-bottom: 40%;">Caminamos contigo para que <br> tomes mejores decisiones</h5>
-                    <p>Los asuntos públicos, afectan o benefian a las</p>
+                    <p>Los asuntos públicos, afectan o benefician a las</p>
                     <div class="selector">
-                        <h1 class="ah-headline" style="color: #A1185B;">
+                        <h1 class="ah-headline txt-morado">
                             <span class="ah-words-wrapper w-100 text-center">
                                 <b class="is-visible text-headline"><strong>PERSONAS</strong></b>
                                 <b class="text-headline">EMPRESAS</b>
@@ -83,21 +83,20 @@
                             </span>
                         </h1>
                     </div>
-                    <p>En Acompaña somos especialistas en el análisis y <br>
-                        gestión de los asuntos relacionados en el ámbito <br>
-                        gubernamental</p>
+                    <p class="mx-2 mx-md-5">En Acompaña somos especialistas en el análisis y gestión de los asuntos
+                        relacionados en el ámbito gubernamental</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img/carousel-main/background-2.jpg" class="d-block w-100" alt="...">
-                <div class="text-caption d-none d-md-block">
+                <img id="carousel-background-2" src="img/carousel-main/background-2.jpg" class="d-block w-100" alt="...">
+                <div class="text-caption">
                     <br>
                     <img src="img/logo.png" class="img-fluid" style="width: 60%;" alt=""><br>
                     <img src="img/carousel-main/line.png" class="img-fluid" style="width: 10%;" alt="">
                     <h5 style="margin-bottom: 40%;">Caminamos contigo para que <br> tomes mejores decisiones</h5>
-                    <p>Los asuntos públicos, afectan o benefian a las</p>
+                    <p>Los asuntos públicos, afectan o benefician a las</p>
                     <div class="selector">
-                        <h1 class="ah-headline" style="color: #A1185B;">
+                        <h1 class="ah-headline txt-morado">
                             <span class="ah-words-wrapper w-100 text-center">
                                 <b class="is-visible text-headline">PERSONAS</b>
                                 <b class="text-headline">EMPRESAS</b>
@@ -112,15 +111,15 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img/carousel-main/background-3.jpg" class="d-block w-100" alt="...">
-                <div class="text-caption d-none d-md-block">
+                <img id="carousel-background-3" src="img/carousel-main/background-3.jpg" class="d-block w-100" alt="...">
+                <div class="text-caption">
                     <br>
                     <img src="img/logo.png" class="img-fluid" style="width: 60%;" alt=""><br>
                     <img src="img/carousel-main/line.png" class="img-fluid" style="width: 10%;" alt="">
                     <h5 style="margin-bottom: 40%;">Caminamos contigo para que <br> tomes mejores decisiones</h5>
-                    <p>Los asuntos públicos, afectan o benefian a las</p>
+                    <p>Los asuntos públicos, afectan o benefician a las</p>
                     <div class="selector">
-                        <h1 class="ah-headline" style="color: #A1185B;">
+                        <h1 class="ah-headline txt-morado">
                             <span class="ah-words-wrapper w-100 text-center">
                                 <b class="is-visible text-headline">PERSONAS</b>
                                 <b class="text-headline">EMPRESAS</b>
@@ -147,10 +146,10 @@
 
     <div class="container">
         <div class="row line-divider" id="nosotros">
-            <div class="col-md-4 my-5">
-                <img src="img/nosotros/title.png" class="img-fluid" alt="" style="width: 65%;">
+            <div class="col-md-4 my-md-5 my-4">
+                <img src="img/nosotros/title.png" class="img-fluid title-nosotros-size" alt="">
             </div>
-            <div class="col-md-8 my-5 px-4 py-3 text-center text-white bg-degradado" style="border-radius: 10px; box-shadow: 2px 10px 15px #000;">
+            <div class="col-md-8 my-md-5 mt-0 mb-4 px-4 py-3 text-center text-white bg-degradado" style="border-radius: 10px; box-shadow: 2px 10px 15px #000;">
                 <p>Somos un despacho especializado en la prestación de servicios profesionales de
                     análisis y gestión de asuntos relacionados con el ámbito de gobierno.</p>
                 <p>Estamos listos para acompañarte en los procesos para prevenir, promover y proteger
@@ -162,8 +161,8 @@
             </div>
         </div>
         <div class="row line-divider" id="servicios">
-            <div class="col-md-12 my-4">
-                <img src="img/servicios/title.jpg" class="img-fluid" alt="" style="width: 20%;">
+            <div class="col-md-12 my-md-4 mt-4 mb-0">
+                <img src="img/servicios/title.jpg" class="img-fluid title-servicios-size">
             </div>
             <div class="col-md-4 p-4 h-card-service">
                 <div class="imgAsistenteVirtual w-100 h-100" style="position: relative;">
@@ -175,8 +174,8 @@
                         Con tan solo 10 minutos de lectura al día, entérate y comprende lo que sucede en México
                         y el mundo de forma simple, rápida, objetiva, confiable y automatizada utilizando esta
                         herramienta digital.
-                        <a class="btn-services py-2" target="_BLANK" href="https://api.whatsapp.com/send?phone=+523334753226&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20.">
-                            Asesoría online
+                        <a class="btn-services py-2" target="_BLANK" href="https://api.whatsapp.com/send?phone=+523334753226&text=¡Hola!%20Quiero%20descubrir%20el%20Asistente%20Virtual%20de%20Noticias.">
+                            Suscríbete
                         </a>
                     </div>
                 </div>
@@ -193,8 +192,8 @@
                         de revisión de las acciones de gobierno que te permita comprender sus implicaciones
                         técnicas, jurídicas, políticas o sociales. Además, te asesoramos sobre las posibles rutas
                         de acción que puedes tomar.
-                        <a class="btn-services py-2" target="_BLANK" href="https://api.whatsapp.com/send?phone=+523334753226&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20.">
-                            Suscríbete
+                        <a class="btn-services py-2" target="_BLANK" href="https://api.whatsapp.com/send?phone=+523334753226&text=¡Hola!%20Quiero%20más%20información%20sobre%20las%20asesorías%20online.">
+                            Asesoría online
                         </a>
                     </div>
                 </div>
@@ -250,9 +249,9 @@
         </div>
         <div class="row line-divider" id="para-quien-es">
             <div class="col-md-4 mt-4">
-                <img src="img/para-quien-es/title.jpg" class="img-fluid" alt="" style="width: 80%;"><br><br><br>
+                <img src="img/para-quien-es/title.jpg" class="img-fluid" alt="" style="width: 80%;"><br class="br-hidden-phone"><br><br>
                 <div class="selector">
-                    <h1 class="ah-headline" style="color: #A1185B;">
+                    <h1 class="ah-headline txt-morado">
                         <span class="ah-words-wrapper">
                             <b class="is-visible">PERSONAS</b>
                             <b>EMPRESAS</b>
@@ -288,15 +287,18 @@
     </div>
 
     <div class="row mx-0" id="por-que-nosotros">
-        <div class="col-md-7 d-flex align-items-center" style="background-image: url(img/por-que-nosotros/background.jpg); background-size: cover;">
+        <div class="col-md-7 d-flex align-items-center bg-porque-nosotros">
             <div class="row">
                 <div class="col-md-6 px-5">
-                    <img src="img/por-que-nosotros/title.png" class="img-fluid" style="width: 80%;" alt="">
-                    <p class="text-white">En Acompaña tenemos un amplio conocimiento de la estructura
-                        legal, organizacional y funcional de las instituciones públicas involucradas
-                        en la toma de decisiones. Además, estamos al tanto de los temas que se proponen
-                        y discuten, por lo que podemos brindarle la asesoría necesaria para que tus
-                        intereses e inquietudes tengan una estrategia alineada con las normas y los procesos</p>
+                    <div class="mb-3" style="text-align: center;">
+                        <img src="img/por-que-nosotros/title.png" class="img-fluid" style="width: 80%;" alt="">
+                    </div>
+                    <p class="text-white" style="text-align: justify">
+                        En Acompaña tenemos un amplio conocimiento de la estructura legal, organizacional y funcional
+                        de las instituciones públicas involucradas en la toma de decisiones. Además, estamos al tanto
+                        de los temas que se proponen y discuten, por lo que podemos brindarle la asesoría necesaria
+                        para que tus intereses e inquietudes tengan una estrategia alineada con las normas y los procesos.
+                    </p>
                 </div>
             </div>
         </div>
@@ -334,8 +336,9 @@
 
     <!-- WhatsApp Floating-->
     <div class="whatsapp whatsappme">
-        <a href="https://api.whatsapp.com/send?phone=+523334753226&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20." class="whatsapp" target="_blank">
-            <i class="fab fa-whatsapp" data-tooltip="Contáctanos"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=+523334753226&text=¡Hola!%20Quiero%20ponerme%20en%20contacto%20para%20recibir%20más%20información." class="whatsapp" target="_blank">
+            <i class="fab fa-whatsapp" data-tooltip="Contáctanos"></i>
+        </a>
         <div class="whatsappme_tooltip" style="display: none;">
             <div>Contáctanos para más inf.</div>
         </div>
@@ -347,7 +350,7 @@
     <script src="node_modules/jquery-animated-headlines/dist/js/jquery.animatedheadline.min.js"></script>
 
     <!-- Main js -->
-    <script src="js/app.js?v=1.1"></script>
+    <script src="js/app.js?v=2"></script>
 
 </body>
 
