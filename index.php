@@ -150,14 +150,14 @@
                 <img src="img/nosotros/title.png" class="img-fluid title-nosotros-size" alt="">
             </div>
             <div class="col-md-8 my-md-5 mt-0 mb-4 px-4 py-3 text-center text-white bg-degradado" style="border-radius: 10px; box-shadow: 2px 10px 15px #000;">
-                <p>Somos un despacho especializado en la prestación de servicios profesionales de
-                    análisis y gestión de asuntos relacionados con el ámbito de gobierno.</p>
+                <p>Somos un despacho especializado en la prestación de servicios profesionales en 
+                análisis y gestión de asuntos relacionados con el ámbito de gobierno.</p>
                 <p>Estamos listos para acompañarte en los procesos para prevenir, promover y proteger
                     tus intereses e inquietudes, sobre la toma de decisiones que realiza el Gobierno e influyen en tu
                     entorno.</p>
                 <p>También contribuimos con el análisis del ámbito público, para prevenir crisis y
-                    anticipar escenarios en el entorno social, político y de gobierno. <br>
-                    Además, te ayudamos a construir relaciones estratégicas para que alcances tus metas.</p>
+                    anticipar escenarios en el entorno social, político y de gobierno. </p>
+                <p>Además, te ayudamos a construir relaciones estratégicas para que alcances tus metas.</p>
             </div>
         </div>
         <div class="row line-divider" id="servicios">
@@ -296,7 +296,7 @@
                     <p class="text-white" style="text-align: justify">
                         En Acompaña tenemos un amplio conocimiento de la estructura legal, organizacional y funcional
                         de las instituciones públicas involucradas en la toma de decisiones. Además, estamos al tanto
-                        de los temas que se proponen y discuten, por lo que podemos brindarle la asesoría necesaria
+                        de los temas que se proponen y discuten, por lo que podemos brindarte la asesoría necesaria
                         para que tus intereses e inquietudes tengan una estrategia alineada con las normas y los procesos.
                     </p>
                 </div>
