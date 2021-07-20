@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="css/load-awesome.min.css">
     <!-- Custom styles -->
-    <link rel="stylesheet" href="css/styles.css?v=2">
+    <link rel="stylesheet" href="css/styles.css?v=2.1">
 
 </head>
 
@@ -105,9 +105,8 @@
                             </span>
                         </h1>
                     </div>
-                    <p>En Acompaña somos especialistas en el análisis y <br>
-                        gestión de los asuntos relacionados en el ámbito <br>
-                        gubernamental</p>
+                    <p class="mx-2 mx-md-5">En Acompaña somos especialistas en el análisis y gestión de los asuntos
+                        relacionados en el ámbito gubernamental</p>
                 </div>
             </div>
             <div class="carousel-item">
@@ -128,9 +127,8 @@
                             </span>
                         </h1>
                     </div>
-                    <p>En Acompaña somos especialistas en el análisis y <br>
-                        gestión de los asuntos relacionados en el ámbito <br>
-                        gubernamental</p>
+                    <p class="mx-2 mx-md-5">En Acompaña somos especialistas en el análisis y gestión de los asuntos
+                        relacionados en el ámbito gubernamental</p>
                 </div>
             </div>
         </div>

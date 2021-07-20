@@ -319,3 +319,9 @@ body {
     height: 460px !important;
   }
 }
+
+@media only screen and (max-width: 400px) {
+  .h-card-service {
+    height: 450px !important;
+  }
+}
